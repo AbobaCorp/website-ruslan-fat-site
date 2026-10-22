@@ -1,1031 +1,480 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>РУСЛАН КАМЕНЕЦКИЙ — №1 ДРОЧЕР АЯНАМИ РЕЙ 🌸🍗</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        neonpink: '#FF1493',
-                        hotpink: '#FF69B4',
-                        darkpink: '#DB2777',
-                    },
-                    animation: {
-                        'pulse-fast': 'pulse 0.8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'bounce-slow': 'bounce 2s infinite',
-                        'spin-slow': 'spin 3s linear infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                        'float': 'float 3s ease-in-out infinite',
-                        'shake': 'shake 0.5s ease-in-out',
-                        'rainbow': 'rainbow 3s linear infinite',
-                    },
-                    keyframes: {
-                        glow: {
-                            '0%': { textShadow: '0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 40px #FF1493, 0 0 80px #DB2777' },
-                            '100%': { textShadow: '0 0 20px #FF69B4, 0 0 40px #FF69B4, 0 0 60px #FF1493, 0 0 100px #FF1493' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        },
-                        shake: {
-                            '0%, 100%': { transform: 'translateX(0)' },
-                            '25%': { transform: 'translateX(-10px)' },
-                            '75%': { transform: 'translateX(10px)' },
-                        },
-                        rainbow: {
-                            '0%': { filter: 'hue-rotate(0deg)' },
-                            '100%': { filter: 'hue-rotate(360deg)' },
-                        },
-                    }
-                }
-            }
-        }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Руслан Каменецкий — главный фанат Аянами Рей 🌸🍗</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Rubik+Glitch&family=Press+Start+2P&display=swap');
+        :root {
+            --bg: #0b0610;
+            --card: #160c1f;
+            --pink: #ff2e93;
+            --soft: #ff8cc6;
+            --text: #f6ecf5;
+            --muted: #a995b3
+        }
 
-        * { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size:24px'><text y='24'>🍗</text></svg>"), auto; }
+        * {
+            box-sizing: border-box;
+            margin: 0
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
 
         body {
-            background: #0a0a0a;
-            overflow-x: hidden;
+            background: radial-gradient(ellipse at 50% 0, #2a0a28 0, var(--bg) 60%) fixed;
+            color: var(--text);
+            font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif
         }
 
-        .neon-text {
-            text-shadow: 0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 40px #FF1493, 0 0 80px #DB2777;
+        a {
+            color: inherit;
+            text-decoration: none
         }
 
-        .neon-text-strong {
-            text-shadow: 0 0 5px #FF1493, 0 0 10px #FF1493, 0 0 20px #FF1493, 0 0 40px #FF1493, 0 0 80px #DB2777, 0 0 120px #DB2777;
+        .wrap {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 18px
         }
 
-        .neon-box {
-            box-shadow: 0 0 10px #FF1493, 0 0 20px #FF1493, inset 0 0 10px rgba(255, 20, 147, 0.1);
-        }
-
-        .neon-box-strong {
-            box-shadow: 0 0 15px #FF1493, 0 0 30px #FF1493, 0 0 60px #DB2777, inset 0 0 15px rgba(255, 20, 147, 0.2);
-        }
-
-        .neon-border {
-            border: 2px solid #FF1493;
-            box-shadow: 0 0 10px #FF1493, inset 0 0 10px rgba(255, 20, 147, 0.1);
-        }
-
-        .glitch {
-            position: relative;
-        }
-
-        .glitch::before,
-        .glitch::after {
-            content: attr(data-text);
-            position: absolute;
+        nav {
+            position: sticky;
             top: 0;
-            left: 0;
+            z-index: 5;
+            background: #0b0610e6;
+            border-bottom: 1px solid #ff2e9355;
+            backdrop-filter: blur(6px)
+        }
+
+        nav .wrap {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            height: 54px;
+            overflow-x: auto;
+            white-space: nowrap
+        }
+
+        nav b {
+            color: var(--pink);
+            margin-right: auto
+        }
+
+        nav a {
+            color: var(--soft);
+            font-size: .92rem
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            color: #fff;
+            outline: none;
+            text-shadow: 0 0 8px var(--pink)
+        }
+
+        h1,
+        h2 {
+            font-family: Impact, "Arial Black", system-ui, sans-serif;
+            letter-spacing: .02em;
+            font-weight: 400
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 4.4rem);
+            line-height: 1.05;
+            color: #fff;
+            text-shadow: 0 0 14px var(--pink), 0 0 40px #ff2e9388
+        }
+
+        h2 {
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            color: var(--pink);
+            text-shadow: 0 0 12px #ff2e9399;
+            margin-bottom: 6px
+        }
+
+        section {
+            padding: 64px 0
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 0 50px
+        }
+
+        .avatar {
+            width: clamp(150px, 40vw, 210px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            margin: 0 auto 22px;
+            border: 3px solid var(--pink);
+            box-shadow: 0 0 26px #ff2e9399;
+            overflow: hidden;
+            background: #241033;
+            display: grid;
+            place-items: center;
+            font-size: 4.5rem
+        }
+
+        .avatar img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            display: block
         }
 
-        .glitch::before {
-            animation: glitch-1 2s infinite linear alternate-reverse;
-            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-            color: #00ffff;
+        .lead {
+            color: var(--soft);
+            font-size: 1.15rem;
+            max-width: 560px;
+            margin: 14px auto 22px
         }
 
-        .glitch::after {
-            animation: glitch-2 2s infinite linear alternate-reverse;
-            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
-            color: #ff00ff;
+        .btn {
+            display: inline-block;
+            background: var(--pink);
+            color: #18030f;
+            font-weight: 700;
+            border: 0;
+            border-radius: 999px;
+            padding: 12px 26px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 0 18px #ff2e9388;
+            transition: transform .15s
         }
 
-        @keyframes glitch-1 {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(-3px); }
-            40% { transform: translateX(3px); }
-            60% { transform: translateX(-1px); }
-            80% { transform: translateX(2px); }
-            100% { transform: translateX(0); }
+        .btn:hover {
+            transform: translateY(-2px)
         }
 
-        @keyframes glitch-2 {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(3px); }
-            40% { transform: translateX(-3px); }
-            60% { transform: translateX(1px); }
-            80% { transform: translateX(-2px); }
-            100% { transform: translateX(0); }
+        .btn:active {
+            transform: scale(.96)
         }
 
-        .card-hover:hover {
-            transform: translateY(-10px) scale(1.05) rotate(-2deg);
-            box-shadow: 0 0 30px #FF1493, 0 0 60px #DB2777;
+        .btn:focus-visible {
+            outline: 3px solid #fff;
+            outline-offset: 3px
         }
 
-        .card-hover {
-            transition: all 0.3s ease;
+        .btn.ghost {
+            background: none;
+            color: var(--pink);
+            border: 2px solid var(--pink);
+            box-shadow: none
         }
 
-        .marquee {
-            animation: marquee 15s linear infinite;
+        .stats,
+        .grid {
+            display: grid;
+            gap: 14px;
+            margin-top: 26px
         }
 
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+        .stats {
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr))
         }
 
-        .progress-fill {
-            background: linear-gradient(90deg, #FF1493, #FF69B4, #FF1493);
-            background-size: 200% 100%;
-            animation: progress-shimmer 2s linear infinite;
+        .grid {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
         }
 
-        @keyframes progress-shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+        .card {
+            background: var(--card);
+            border: 1px solid #ff2e9344;
+            border-radius: 14px;
+            padding: 16px;
+            transition: border-color .2s, box-shadow .2s
         }
 
-        .emoji-rain {
+        .card:hover {
+            border-color: var(--pink);
+            box-shadow: 0 0 18px #ff2e9355
+        }
+
+        .stats .card {
+            text-align: center
+        }
+
+        .num {
+            font: 2rem Impact, sans-serif;
+            color: var(--pink)
+        }
+
+        .small {
+            color: var(--muted);
+            font-size: .85rem
+        }
+
+        .ic {
+            font-size: 2.6rem;
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .bar {
+            height: 7px;
+            background: #2a1738;
+            border-radius: 9px;
+            margin-top: 10px;
+            overflow: hidden
+        }
+
+        .bar i {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, var(--pink), var(--soft))
+        }
+
+        .quote {
+            margin-top: 22px;
+            border-left: 4px solid var(--pink);
+            padding: 10px 16px;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--soft)
+        }
+
+        .box {
+            text-align: center
+        }
+
+        .big {
+            font: clamp(4rem, 18vw, 7rem)/1 Impact, sans-serif;
+            color: #fff;
+            text-shadow: 0 0 22px var(--pink)
+        }
+
+        #log,
+        #plans {
+            margin-top: 20px;
+            text-align: left
+        }
+
+        .row {
+            background: var(--card);
+            border: 1px solid #ff2e9333;
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-top: 8px;
+            font-size: .95rem
+        }
+
+        .pop {
             position: fixed;
-            font-size: 2rem;
-            animation: fall linear forwards;
+            top: -40px;
             pointer-events: none;
-            z-index: 9999;
+            font-size: 1.8rem;
+            z-index: 9;
+            animation: fall 2.6s ease-in forwards
         }
 
         @keyframes fall {
-            to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+            to {
+                transform: translateY(110vh) rotate(300deg);
+                opacity: 0
+            }
         }
 
-        .scanlines {
-            background: repeating-linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.15),
-                rgba(0, 0, 0, 0.15) 1px,
-                transparent 1px,
-                transparent 2px
-            );
-            pointer-events: none;
+        footer {
+            text-align: center;
+            padding: 40px 18px 60px;
+            color: var(--muted);
+            border-top: 1px solid #ff2e9333
         }
 
-        .star-bg {
-            background-image:
-                radial-gradient(2px 2px at 20px 30px, #FF1493, transparent),
-                radial-gradient(2px 2px at 40px 70px, #FF69B4, transparent),
-                radial-gradient(1px 1px at 90px 40px, #FF1493, transparent),
-                radial-gradient(1px 1px at 130px 80px, #FF69B4, transparent),
-                radial-gradient(2px 2px at 160px 30px, #FF1493, transparent);
-            background-repeat: repeat;
-            background-size: 200px 100px;
-            animation: twinkle 4s ease-in-out infinite alternate;
-        }
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
 
-        @keyframes twinkle {
-            0% { opacity: 0.3; }
-            100% { opacity: 0.8; }
-        }
+            .pop {
+                display: none
+            }
 
-        .pixel-border {
-            border: 4px solid #FF1493;
-            outline: 4px solid transparent;
-            outline-offset: 4px;
-        }
-
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(#FF1493, #DB2777);
-            border-radius: 6px;
-        }
-
-        .feed-btn:active {
-            transform: scale(0.95);
-        }
-
-        .hero-bg {
-            background:
-                radial-gradient(ellipse at 20% 50%, rgba(255, 20, 147, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 50%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 80%, rgba(219, 39, 119, 0.2) 0%, transparent 50%);
-        }
-
-        .typing::after {
-            content: '|';
-            animation: blink 1s infinite;
-        }
-
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+            .btn {
+                transition: none
+            }
         }
     </style>
 </head>
-<body class="text-white">
 
-    <!-- Scanline overlay -->
-    <div class="scanlines fixed inset-0 z-50 pointer-events-none"></div>
-
-    <!-- FLOATING EMOJI BACKGROUND -->
-    <div id="floating-emojis" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
-
-    <!-- ==================== НАВБАР ==================== -->
-    <nav class="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b-2 border-neonpink neon-box">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between h-16">
-                <!-- Логотип -->
-                <a href="#hero" class="flex items-center gap-2 group">
-                    <span class="text-2xl animate-bounce">🍗</span>
-                    <span class="font-bold text-neonpink text-sm md:text-base tracking-wider neon-text group-hover:animate-rainbow">
-                        РУСЛАН КАМЕНЕЦКИЙ
-                    </span>
-                    <span class="hidden md:inline text-xs text-hotpink ml-1">| №1 ДРОЧЕР АЯНАМИ РЕЙ</span>
-                </a>
-
-                <!-- Меню десктоп -->
-                <div class="hidden md:flex items-center gap-1 lg:gap-3 text-xs lg:text-sm">
-                    <a href="#hero" class="px-2 py-1 hover:text-neonpink hover:neon-text transition-all duration-300">🏠 Главная</a>
-                    <a href="#about" class="px-2 py-1 hover:text-neonpink hover:neon-text transition-all duration-300">🧔 О Руслане</a>
-                    <a href="#shrine" class="px-2 py-1 hover:text-neonpink hover:neon-text transition-all duration-300">🌸 ШРИН РЕЙ</a>
-                    <a href="#diary" class="px-2 py-1 hover:text-neonpink hover:neon-text transition-all duration-300">📓 ДНЕВНИК</a>
-                    <a href="#records" class="px-2 py-1 hover:text-neonpink hover:neon-text transition-all duration-300">🍗 РЕКОРДЫ</a>
-                    <a href="#feed" class="px-3 py-1.5 bg-neonpink text-black font-bold rounded-full hover:bg-hotpink transition-all neon-box-strong">
-                        🍗 КОРМИТЬ
-                    </a>
-                </div>
-
-                <!-- Мобильное меню кнопка -->
-                <button id="menuToggle" class="md:hidden text-neonpink text-2xl neon-text">☰</button>
-            </div>
-        </div>
-        <!-- Мобильное меню -->
-        <div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-neonpink pb-4">
-            <a href="#hero" class="block px-4 py-2 hover:text-neonpink transition-all">🏠 Главная</a>
-            <a href="#about" class="block px-4 py-2 hover:text-neonpink transition-all">🧔 О Руслане</a>
-            <a href="#shrine" class="block px-4 py-2 hover:text-neonpink transition-all">🌸 ШРИН РЕЙ</a>
-            <a href="#diary" class="block px-4 py-2 hover:text-neonpink transition-all">📓 ДНЕВНИК</a>
-            <a href="#records" class="block px-4 py-2 hover:text-neonpink transition-all">🍗 РЕКОРДЫ</a>
-            <a href="#feed" class="block px-4 py-2 text-neonpink font-bold">🍗 КОРМИТЬ РУСЛАНА</a>
+<body>
+    <nav>
+        <div class="wrap">
+            <b>🍗 Руслан К.</b>
+            <a href="#about">О Руслане</a><a href="#shrine">Шрин Рей</a><a href="#evening">Вечер</a><a
+                href="#records">Рекорды</a><a href="#feed">Покормить</a>
         </div>
     </nav>
 
-    <!-- ==================== MARQUEE ==================== -->
-    <div class="fixed top-16 left-0 right-0 z-30 bg-gradient-to-r from-neonpink via-hotpink to-neonpink overflow-hidden py-1">
-        <div class="marquee whitespace-nowrap text-black font-bold text-xs tracking-widest">
-            🍗 РУСЛАН ДРОЧИТ НА РЕЙ С 2018 ГОДА 🌸 10 ВЁДЕР KFC В ДЕНЬ 🍗 2 БОЧКИ МАЙОНЕЗА 🥫 1337 ДРОЧЕК ЗАВЕРШЕНО 💦 АЯНАМИ РЕЙ ОДОБРЯЕТ 🌸 РУСЛАН КАМЕНЕЦКИЙ — НАШИМ ДРОЧЕРАМ ДРОЧЕР 💦 ОТСТРАПОНЕНАЯ ДУША 💦 KFC + РЕЙ = ЛЮБОВЬ 🍗
-        </div>
-    </div>
-
-    <!-- ==================== HERO СЕКЦИЯ ==================== -->
-    <section id="hero" class="relative min-h-screen flex items-center justify-center hero-bg star-bg pt-28 pb-16 px-4">
-        <!-- Неоновые декоративные элементы -->
-        <div class="absolute top-20 left-10 text-6xl animate-float opacity-30">🌸</div>
-        <div class="absolute top-40 right-16 text-5xl animate-float opacity-30" style="animation-delay: 1s;">🍗</div>
-        <div class="absolute bottom-32 left-20 text-4xl animate-float opacity-30" style="animation-delay: 0.5s;">💦</div>
-        <div class="absolute bottom-20 right-10 text-6xl animate-float opacity-30" style="animation-delay: 1.5s;">🥫</div>
-
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <!-- Аватар/Иллюстрация -->
-            <div class="mb-8 relative inline-block">
-                <div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full bg-gradient-to-br from-neonpink via-hotpink to-darkpink neon-box-strong flex items-center justify-center animate-glow overflow-hidden relative">
-                    <div class="text-center">
-                        <div class="text-6xl md:text-8xl mb-1">👩‍🦳</div>
-                        <div class="text-xs font-bold text-black">РЕЙ</div>
-                    </div>
-                    <!-- Вращающаяся рамка -->
-                    <div class="absolute inset-0 rounded-full border-4 border-dashed border-white/30 animate-spin-slow"></div>
-                </div>
-                <div class="absolute -bottom-2 -right-2 text-4xl animate-bounce">🍗</div>
-                <div class="absolute -top-2 -left-2 text-3xl animate-pulse">💦</div>
+    <header class="hero wrap">
+        <div class="avatar"><img src="photo.jpg" alt="Руслан" width="210" height="210" fetchpriority="high"
+                onerror="this.replaceWith(document.createTextNode('🌸'))"></div>
+        <h1>Добро пожаловать в храм<br>Аянами Рей</h1>
+        <p class="lead">Сайт про Руслана Каменецкого: главного фаната Рей, знатока Evangelion и человека, который всегда
+            знает, где ближайший KFC.</p>
+        <a class="btn" href="#shrine">К шрину Рей</a> <a class="btn ghost" href="#feed">Покормить Руслана</a>
+        <div class="stats">
+            <div class="card">
+                <div class="num" data-to="15">0</div>
+                <div class="small">лет в аниме</div>
             </div>
-
-            <!-- Заголовок -->
-            <h1 class="text-3xl md:text-5xl lg:text-7xl font-black mb-4 neon-text-strong leading-tight" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                ДОБРО ПОЖАЛОВАТЬ<br>
-                <span class="text-hotpink">В ХРАМ</span><br>
-                САМОГО ЖИРНОГО<br>
-                <span class="animate-rainbow">ДРОЧЕРА АЯНАМИ РЕЙ</span>
-            </h1>
-
-            <!-- Подзаголовок -->
-            <p class="text-lg md:text-2xl text-hotpink mb-6 font-bold neon-text typing" id="heroSubtitle">
-                Руслан Каменецкий жрёт 10 вёдер KFC и дрочит на Рей уже 8 лет подряд
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-4 mt-8">
-                <a href="#shrine" class="px-8 py-3 bg-neonpink text-black font-black rounded-full text-lg hover:bg-hotpink transition-all neon-box-strong hover:scale-110 transform duration-300">
-                    🌸 К ШРИНУ РЕЙ
-                </a>
-                <a href="#feed" class="px-8 py-3 border-2 border-neonpink text-neonpink font-black rounded-full text-lg hover:bg-neonpink hover:text-black transition-all neon-box hover:scale-110 transform duration-300">
-                    🍗 ПОКОРМИТЬ
-                </a>
+            <div class="card">
+                <div class="num" data-to="12">0</div>
+                <div class="small">пересмотров Evangelion</div>
             </div>
-
-            <!-- Статистика -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-3xl mx-auto">
-                <div class="bg-black/60 border border-neonpink rounded-xl p-3 neon-box">
-                    <div class="text-2xl md:text-3xl font-black text-neonpink">1337</div>
-                    <div class="text-xs text-hotpink">Дрочек всего</div>
-                </div>
-                <div class="bg-black/60 border border-neonpink rounded-xl p-3 neon-box">
-                    <div class="text-2xl md:text-3xl font-black text-neonpink">10</div>
-                    <div class="text-xs text-hotpink">Вёдер KFC/день</div>
-                </div>
-                <div class="bg-black/60 border border-neonpink rounded-xl p-3 neon-box">
-                    <div class="text-2xl md:text-3xl font-black text-neonpink">8 лет</div>
-                    <div class="text-xs text-hotpink">Стаж дрочки</div>
-                </div>
-                <div class="bg-black/60 border border-neonpink rounded-xl p-3 neon-box">
-                    <div class="text-2xl md:text-3xl font-black text-neonpink">2</div>
-                    <div class="text-xs text-hotpink">Бочки майонеза</div>
-                </div>
+            <div class="card">
+                <div class="num" data-to="8">0</div>
+                <div class="small">лет с любимой Рей</div>
+            </div>
+            <div class="card">
+                <div class="num" data-to="99">0</div>
+                <div class="small">% любви к KFC</div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- ==================== О РУСЛАНЕ ==================== -->
-    <section id="about" class="relative py-20 px-4 bg-gradient-to-b from-black via-[#1a0010] to-black">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-center mb-12 neon-text" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                🧔 КТО ТАКОЙ РУСЛАН? 🧔
-            </h2>
-
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <!-- Аватарка -->
-                <div class="flex justify-center">
-                    <div class="w-64 h-64 md:w-72 md:h-72 bg-gradient-to-br from-neonpink/20 to-darkpink/20 rounded-3xl border-4 border-neonpink neon-box flex items-center justify-center relative overflow-hidden">
-                        <div class="text-center">
-                            <div class="text-8xl">🧔</div>
-                            <div class="text-neonpink font-bold text-lg mt-2 neon-text">РУСЛАН</div>
-                            <div class="text-hotpink text-sm">КАМЕНЕЦКИЙ</div>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-neonpink/10 to-transparent"></div>
-                    </div>
+    <main class="wrap">
+        <section id="about">
+            <h2>Кто такой Руслан?</h2>
+            <p class="small">Краткая биография легенды</p>
+            <div class="grid">
+                <div class="card"><span class="ic">🎌</span><b>Анимешник</b>
+                    <p class="small">Смотрит с давних времён, мнение о каждом сезоне имеет и охотно делится.</p>
                 </div>
-
-                <!-- Био текст -->
-                <div class="space-y-4">
-                    <div class="bg-black/60 border border-neonpink rounded-2xl p-6 neon-box">
-                        <p class="text-lg leading-relaxed">
-                            <span class="text-neonpink font-black text-xl">Руслан Каменецкий</span> — это не просто человек. Это <span class="text-hotpink font-bold">легенда</span>. Жирный анимешник-уёбок, который <span class="text-neonpink font-bold">10 вёдер KFC</span> в день хавает и <span class="text-hotpink font-bold">дрочит на Аянами Рей</span> уже 8 лет подряд. 🍗💦
-                        </p>
-                    </div>
-
-                    <div class="bg-black/60 border border-neonpink rounded-2xl p-6 neon-box">
-                        <p class="text-lg leading-relaxed">
-                            Его диета: <span class="text-neonpink font-bold">2 бочки майонеза «Провансаль»</span>, <span class="text-hotpink font-bold">12 литров Колы</span> и бесконечное количество вёдер KFC. Аянами Рей его <span class="text-neonpink font-bold">отстрапонила</span> и теперь он — самый розовый анимешник России. 🌸🥫
-                        </p>
-                    </div>
-
-                    <div class="bg-gradient-to-r from-neonpink/20 to-darkpink/20 border border-neonpink rounded-2xl p-6 neon-box-strong">
-                        <p class="text-center text-2xl font-black neon-text">
-                            «Рей — моя жена, KFC — моя еда, майонез — моя религия» 💦
-                        </p>
-                    </div>
+                <div class="card"><span class="ic">🍗</span><b>Ценитель KFC</b>
+                    <p class="small">Знает меню лучше, чем расписание пар.</p>
+                </div>
+                <div class="card"><span class="ic">🌸</span><b>Фанат Рей</b>
+                    <p class="small">Если в разговоре появляется Evangelion, он уже в теме.</p>
                 </div>
             </div>
+            <p class="quote">«Рей — лучшая, KFC — вкусный, а на пары я приду завтра».</p>
+        </section>
 
-            <!-- Факты -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-                <div class="text-center p-4 bg-black/60 rounded-xl border border-hotpink/30 hover:border-neonpink transition-all hover:neon-box">
-                    <div class="text-3xl mb-2">🎌</div>
-                    <div class="font-bold text-neonpink">Анимешник</div>
-                    <div class="text-xs text-gray-400">Стаж 15 лет</div>
+        <section id="shrine">
+            <h2>Шрин Аянами Рей</h2>
+            <p class="small">Любимые образы Рей по версии Руслана</p>
+            <div class="grid">
+                <div class="card"><span class="ic">👩‍🚀</span><b>Plugsuit</b>
+                    <p class="small">Классика</p>
+                    <div class="bar"><i style="width:92%"></i></div>
                 </div>
-                <div class="text-center p-4 bg-black/60 rounded-xl border border-hotpink/30 hover:border-neonpink transition-all hover:neon-box">
-                    <div class="text-3xl mb-2">🍗</div>
-                    <div class="font-bold text-neonpink">KFC-маньяк</div>
-                    <div class="text-xs text-gray-400">10 вёдер/день</div>
+                <div class="card"><span class="ic">🏫</span><b>Школьная форма</b>
+                    <p class="small">Ностальгия</p>
+                    <div class="bar"><i style="width:78%"></i></div>
                 </div>
-                <div class="text-center p-4 bg-black/60 rounded-xl border border-hotpink/30 hover:border-neonpink transition-all hover:neon-box">
-                    <div class="text-3xl mb-2">🥫</div>
-                    <div class="font-bold text-neonpink">Майонезник</div>
-                    <div class="text-xs text-gray-400">2 бочки/день</div>
+                <div class="card"><span class="ic">🩹</span><b>С бинтами</b>
+                    <p class="small">Первая серия</p>
+                    <div class="bar"><i style="width:70%"></i></div>
                 </div>
-                <div class="text-center p-4 bg-black/60 rounded-xl border border-hotpink/30 hover:border-neonpink transition-all hover:neon-box">
-                    <div class="text-3xl mb-2">💦</div>
-                    <div class="font-bold text-neonpink">Дрочер</div>
-                    <div class="text-xs text-gray-400">8 лет на Рей</div>
+                <div class="card"><span class="ic">🌊</span><b>LCL</b>
+                    <p class="small">Для философских вечеров</p>
+                    <div class="bar"><i style="width:64%"></i></div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== ШРИН АЯНАМИ РЕЙ ==================== -->
-    <section id="shrine" class="relative py-20 px-4 bg-gradient-to-b from-black via-[#200015] to-black">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-center mb-4 neon-text-strong" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                🌸 ШРИН АЯНАМИ РЕЙ 🌸
-            </h2>
-            <p class="text-center text-hotpink mb-12 text-lg">Каждая версия Рей — отдельная сессия дрочки 💦🍗</p>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Карточка 1 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-blue-900/50 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">👩‍🦳</span>
-                        <div class="absolute top-2 right-2 bg-neonpink text-black text-xs font-bold px-2 py-1 rounded-full animate-pulse">TOP 1</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Rei Plugsuit 👩‍🚀</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">14 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 87%"></div>
-                        </div>
-                    </div>
+                <div class="card"><span class="ic">🔥</span><b>Rebuild 3.0+1.0</b>
+                    <p class="small">Финал</p>
+                    <div class="bar"><i style="width:85%"></i></div>
                 </div>
-
-                <!-- Карточка 2 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-pink-900/50 to-hotpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">👗</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Rei Casual 👗</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">11 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 72%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 3 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-red-900/50 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">👁️‍🗨️</span>
-                        <div class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full animate-pulse">DANGER</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Red Eye Rei 👁️‍🗨️</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">18 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 4 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-gray-800 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">🩹</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Bandage Rei 🩹</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">9 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 5 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-white/10 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">🏫</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Rei School Uniform 🏫</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">13 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 6 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-purple-900/50 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">🌊</span>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">LCL Rei 🌊</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">21 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 7 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-yellow-900/50 to-neonpink/30 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">🔥</span>
-                        <div class="absolute top-2 right-2 bg-yellow-500 text-black text-xs font-bold px-2 py-1 rounded-full animate-pulse">🔥 NEW</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Rei 3.0+1.0 🔥</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">7 раз</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 45%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Карточка 8 -->
-                <div class="card-hover bg-black/60 border-2 border-neonpink rounded-2xl overflow-hidden neon-box group">
-                    <div class="h-48 bg-gradient-to-br from-neonpink/40 to-darkpink/60 flex items-center justify-center relative">
-                        <span class="text-7xl group-hover:scale-125 transition-transform duration-300">🌸</span>
-                        <div class="absolute top-2 right-2 bg-hotpink text-black text-xs font-bold px-2 py-1 rounded-full animate-pulse">❤️ LOVE</div>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-neonpink text-sm">Невеста Рей 💒</h3>
-                        <p class="text-xs text-hotpink mt-1">Дрочил на эту сегодня: <span class="font-bold text-white">42 раза</span></p>
-                        <div class="mt-2 bg-gray-800 rounded-full h-2">
-                            <div class="progress-fill h-2 rounded-full" style="width: 100%"></div>
-                        </div>
-                    </div>
+                <div class="card"><span class="ic">👗</span><b>Повседневная</b>
+                    <p class="small">Тихая и спокойная</p>
+                    <div class="bar"><i style="width:58%"></i></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== ДНЕВНИК ДРОЧЕРА ==================== -->
-    <section id="diary" class="relative py-20 px-4 bg-gradient-to-b from-black via-[#1a0010] to-black">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-center mb-4 neon-text-strong" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                📓 ДНЕВНИК ДРОЧЕРА 📓
-            </h2>
-            <p class="text-center text-hotpink mb-12">Секретные записи самого преданного дрочера России 💦</p>
+        <section id="evening" class="box">
+            <h2>Чем заняться сегодня вечером?</h2>
+            <p class="small">Генератор идеального аниме-вечера Руслана</p>
+            <p style="margin-top:18px"><button class="btn" id="gen" type="button">Сгенерировать вечер</button></p>
+            <div id="plans" aria-live="polite"></div>
+        </section>
 
-            <!-- Счётчик -->
-            <div class="bg-gradient-to-r from-neonpink/20 via-darkpink/20 to-neonpink/20 border-4 border-neonpink rounded-3xl p-8 mb-8 neon-box-strong text-center">
-                <div class="text-sm text-hotpink mb-2">ОБЩЕЕ КОЛИЧЕСТВО ДРОЧЕК НА РЕЙ:</div>
-                <div class="text-6xl md:text-8xl font-black text-white neon-text-strong" id="totalCounter">1337</div>
-                <div class="text-neonpink mt-2 text-lg">и это только начало... 💦</div>
-            </div>
-
-            <!-- Генератор сессий -->
-            <div class="bg-black/80 border-2 border-neonpink rounded-3xl p-6 md:p-8 neon-box">
-                <h3 class="text-2xl font-bold text-neonpink mb-6 text-center">🎰 Сегодня я дрочил на…</h3>
-
-                <div id="sessionResult" class="bg-gradient-to-br from-neonpink/10 to-darkpink/10 rounded-2xl p-6 mb-6 border border-hotpink/30 min-h-[120px] flex flex-col items-center justify-center">
-                    <div class="text-5xl mb-3" id="sessionEmoji">🤔</div>
-                    <div class="text-lg text-hotpink text-center" id="sessionText">
-                        Нажми кнопку, чтобы сгенерировать новую сессию!
-                    </div>
-                    <div class="text-sm text-gray-400 mt-2" id="sessionTime"></div>
+        <section id="records" class="box">
+            <h2>Рекорды Руслана</h2>
+            <div class="grid">
+                <div class="card"><span class="ic">🏆</span>
+                    <div class="num">12 часов</div>
+                    <p class="small">марафон Evangelion подряд</p>
                 </div>
-
-                <button onclick="generateSession()" class="w-full py-4 bg-gradient-to-r from-neonpink to-darkpink text-white font-black text-lg rounded-2xl hover:from-hotpink hover:to-neonpink transition-all neon-box-strong active:scale-95 transform duration-150">
-                    🎰 СГЕНЕРИРОВАТЬ НОВУЮ СЕССИЮ 💦
-                </button>
-            </div>
-
-            <!-- Последние записи -->
-            <div class="mt-8 space-y-3" id="diaryEntries">
-                <div class="bg-black/60 border border-hotpink/20 rounded-xl p-4 flex items-center gap-3">
-                    <span class="text-2xl">👩‍🚀</span>
-                    <div class="flex-1">
-                        <div class="text-sm font-bold text-neonpink">Rei Plugsuit — 14 раз</div>
-                        <div class="text-xs text-gray-500">Время: 02:47 — 04:23</div>
-                    </div>
-                    <span class="text-hotpink">💦</span>
+                <div class="card"><span class="ic">🍗</span>
+                    <div class="num">3 ведра</div>
+                    <p class="small">самый большой заказ KFC для компании</p>
                 </div>
-                <div class="bg-black/60 border border-hotpink/20 rounded-xl p-4 flex items-center gap-3">
-                    <span class="text-2xl">👁️‍🗨️</span>
-                    <div class="flex-1">
-                        <div class="text-sm font-bold text-neonpink">Red Eye Rei — 18 раз</div>
-                        <div class="text-xs text-gray-500">Время: 14:00 — 16:42</div>
-                    </div>
-                    <span class="text-hotpink">💦</span>
-                </div>
-                <div class="bg-black/60 border border-hotpink/20 rounded-xl p-4 flex items-center gap-3">
-                    <span class="text-2xl">🌊</span>
-                    <div class="flex-1">
-                        <div class="text-sm font-bold text-neonpink">LCL Rei — 21 раз</div>
-                        <div class="text-xs text-gray-500">Время: 22:15 — 01:33</div>
-                    </div>
-                    <span class="text-hotpink">💦</span>
+                <div class="card"><span class="ic">😴</span>
+                    <div class="num">0 пар</div>
+                    <p class="small">посещено на этой неделе (будем это исправлять)</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== РЕКОРДЫ ЖРАТВЫ ==================== -->
-    <section id="records" class="relative py-20 px-4 bg-gradient-to-b from-black via-[#200015] to-black">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-black text-center mb-4 neon-text-strong" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                🍗 РЕКОРДЫ ЖРАТВЫ 🍗
-            </h2>
-            <p class="text-center text-hotpink mb-12">Самый безумный ужин в истории человечества 🤯</p>
+        <section id="feed" class="box">
+            <h2>Покорми Руслана</h2>
+            <p class="small">Каждое нажатие — ещё одно ведро KFC в его жизнь</p>
+            <div class="big" id="cnt">7</div>
+            <p class="small">вёдер сегодня</p>
+            <p style="margin:18px 0"><button class="btn" id="feedBtn" type="button">🍗 Добавить ведро</button></p>
+            <div id="log"></div>
+        </section>
+    </main>
 
-            <!-- Главная карточка рекорда -->
-            <div class="bg-gradient-to-br from-neonpink/20 via-darkpink/20 to-black border-4 border-neonpink rounded-3xl p-6 md:p-10 neon-box-strong relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-neonpink text-black font-black px-6 py-2 rounded-bl-2xl text-sm animate-pulse">
-                    🏆 РЕКОРД 🏆
-                </div>
-
-                <div class="text-center mb-8">
-                    <div class="text-lg text-hotpink mb-2">САМЫЙ БОЛЬШОЙ УЖИН РУСЛАНА</div>
-                    <div class="text-sm text-gray-400">📅 Дата: 03.04.2026 — День, когда KFC закрылся навечно</div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="text-center p-6 bg-black/60 rounded-2xl border border-neonpink/50 hover:border-neonpink transition-all hover:neon-box">
-                        <div class="text-5xl mb-3">🍗</div>
-                        <div class="text-3xl font-black text-neonpink neon-text">10</div>
-                        <div class="text-hotpink font-bold">Вёдер KFC Original</div>
-                        <div class="text-xs text-gray-500 mt-1">~80 кусков курицы</div>
-                    </div>
-                    <div class="text-center p-6 bg-black/60 rounded-2xl border border-neonpink/50 hover:border-neonpink transition-all hover:neon-box">
-                        <div class="text-5xl mb-3">🥫</div>
-                        <div class="text-3xl font-black text-neonpink neon-text">2</div>
-                        <div class="text-hotpink font-bold">Бочки майонеза «Провансаль»</div>
-                        <div class="text-xs text-gray-500 mt-1">~20 литров белого золота</div>
-                    </div>
-                    <div class="text-center p-6 bg-black/60 rounded-2xl border border-neonpink/50 hover:border-neonpink transition-all hover:neon-box">
-                        <div class="text-5xl mb-3">🥤</div>
-                        <div class="text-3xl font-black text-neonpink neon-text">12</div>
-                        <div class="text-hotpink font-bold">Литров Колы</div>
-                        <div class="text-xs text-gray-500 mt-1">Сахарный диабет одобряет</div>
-                    </div>
-                </div>
-
-                <!-- Прогресс-бар сытости -->
-                <div class="mt-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <span class="font-bold text-neonpink">Уровень сытости Руслана:</span>
-                        <span class="font-black text-white neon-text" id="satietyValue">1337%</span>
-                    </div>
-                    <div class="bg-gray-800 rounded-full h-8 overflow-hidden neon-box">
-                        <div class="progress-fill h-8 rounded-full flex items-center justify-end pr-3" style="width: 100%">
-                            <span class="text-xs font-bold text-black">💀</span>
-                        </div>
-                    </div>
-                    <div class="flex justify-between text-xs text-gray-500 mt-1">
-                        <span>Голодный</span>
-                        <span>Нормально</span>
-                        <span>СЫТЫЙ</span>
-                        <span class="text-neonpink font-bold">💀 ПЕРЕЖРАЛСЯ 💀</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Другие рекорды -->
-            <div class="grid md:grid-cols-2 gap-6 mt-8">
-                <div class="bg-black/60 border border-hotpink/30 rounded-2xl p-6 hover:border-neonpink transition-all hover:neon-box">
-                    <h3 class="text-neonpink font-bold text-lg mb-3">🏅 Самый долгий марафон дрочки</h3>
-                    <div class="text-2xl font-black text-white neon-text">12 часов 47 минут</div>
-                    <p class="text-sm text-hotpink mt-2">Рей из фильма «3.0+1.0» — Руслан не мог остановиться</p>
-                </div>
-                <div class="bg-black/60 border border-hotpink/30 rounded-2xl p-6 hover:border-neonpink transition-all hover:neon-box">
-                    <h3 class="text-neonpink font-bold text-lg mb-3">🏅 Больше всего вёдер за день</h3>
-                    <div class="text-2xl font-black text-white neon-text">14 вёдер KFC</div>
-                    <p class="text-sm text-hotpink mt-2">11.11.2025 — после 1337-й дрочки Руслан сожрал всё</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== КОРМИ РУСЛАНА ==================== -->
-    <section id="feed" class="relative py-20 px-4 bg-gradient-to-b from-black via-[#1a0010] to-black">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl md:text-5xl font-black mb-4 neon-text-strong" style="font-family: 'Rubik Bubbles', system-ui, sans-serif;">
-                🍗 КОРМИ РУСЛАНА 🍗
-            </h2>
-            <p class="text-hotpink mb-12 text-lg">Руслан всегда голоден. Помоги ему сожрать ещё!</p>
-
-            <!-- Счётчик кормления -->
-            <div class="bg-gradient-to-br from-neonpink/20 to-darkpink/20 border-4 border-neonpink rounded-3xl p-8 mb-8 neon-box-strong">
-                <div class="text-sm text-hotpink mb-2">СЕГОДНЯ УЖЕ СОЖРАЛ:</div>
-                <div class="text-7xl md:text-9xl font-black text-white neon-text-strong mb-2" id="bucketCounter">7</div>
-                <div class="text-xl text-neonpink font-bold">вёдер KFC + <span id="mayoCounter">14</span> бочек майонеза</div>
-            </div>
-
-            <!-- Кнопка кормления -->
-            <button onclick="feedRuslan()" id="feedBtn" class="feed-btn relative w-full md:w-2/3 mx-auto py-8 bg-gradient-to-r from-neonpink via-hotpink to-neonpink text-black font-black text-xl md:text-2xl rounded-3xl hover:from-hotpink hover:via-neonpink hover:to-darkpink transition-all neon-box-strong mb-8 active:scale-90 transform duration-100">
-                🍗 СКИНУТЬ ВЕДРО KFC + БОЧКУ МАЙОНЕЗА 🥫<br>
-                <span class="text-sm font-bold">(нажми чтобы покормить уёбка)</span>
-            </button>
-
-            <!-- Лог кормления -->
-            <div id="feedLog" class="space-y-2 max-h-64 overflow-y-auto text-left">
-                <div class="bg-black/60 border border-hotpink/20 rounded-lg p-3 text-sm flex items-center gap-2">
-                    <span>🍗</span>
-                    <span class="text-neonpink">Ведро #7</span>
-                    <span class="text-gray-500">— уже в желудке Руслана</span>
-                    <span class="ml-auto text-hotpink">🥫 +1 бочка</span>
-                </div>
-                <div class="bg-black/60 border border-hotpink/20 rounded-lg p-3 text-sm flex items-center gap-2">
-                    <span>🍗</span>
-                    <span class="text-neonpink">Ведро #6</span>
-                    <span class="text-gray-500">— запил колой</span>
-                    <span class="ml-auto text-hotpink">🥫 +1 бочка</span>
-                </div>
-                <div class="bg-black/60 border border-hotpink/20 rounded-lg p-3 text-sm flex items-center gap-2">
-                    <span>🍗</span>
-                    <span class="text-neonpink">Ведро #5</span>
-                    <span class="text-gray-500">— облизал пальцы</span>
-                    <span class="ml-auto text-hotpink">🥫 +1 бочка</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== ФУТЕР ==================== -->
-    <footer class="relative py-12 px-4 bg-black border-t-4 border-neonpink neon-box">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="text-4xl mb-4">🌸🍗💦🥫👩‍🦳</div>
-            <p class="text-hotpink text-lg mb-6 neon-text">
-                Сайт создан с любовью и майонезом специально для самого розового анимешника России 💖
-            </p>
-            <p class="text-gray-500 text-sm mb-8">
-                © 2026 Храм Аянами Рей | Все права защищены KFC | Руслан, хватит дрочить, иди поешь
-            </p>
-
-            <!-- Социальные иконки -->
-            <div class="flex justify-center gap-6 mb-8">
-                <a href="#" class="group flex flex-col items-center gap-2">
-                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform neon-box">
-                        <span class="text-2xl">✈️</span>
-                    </div>
-                    <span class="text-xs text-gray-400 group-hover:text-neonpink transition-colors">Telegram</span>
-                </a>
-                <a href="#" class="group flex flex-col items-center gap-2">
-                    <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform neon-box">
-                        <span class="text-2xl">🔵</span>
-                    </div>
-                    <span class="text-xs text-gray-400 group-hover:text-neonpink transition-colors">VK</span>
-                </a>
-                <a href="#" class="group flex flex-col items-center gap-2">
-                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform neon-box animate-rainbow">
-                        <span class="text-2xl">🍑</span>
-                    </div>
-                    <span class="text-xs text-gray-400 group-hover:text-neonpink transition-colors">OnlyFans</span>
-                </a>
-            </div>
-
-            <div class="text-xs text-gray-600">
-                Ни одна Аянами Рей не пострадала при создании этого сайта. Руслан — нет.
-            </div>
-        </div>
+    <footer>
+        <p>🌸 Сайт сделан друзьями с любовью. Руслан, привет! Ждём тебя на парах 🍗</p>
+        <p class="small" style="margin-top:8px">© 2026 Храм Аянами Рей</p>
     </footer>
 
-    <!-- ==================== JAVASCRIPT ==================== -->
     <script>
-        // ===== MOBILE MENU =====
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.querySelectorAll("[data-to]").forEach(function (el) {
+            var to = +el.dataset.to, v = 0, step = Math.max(1, Math.round(to / 30));
+            (function t() { v = Math.min(to, v + step); el.textContent = v; if (v < to) setTimeout(t, 35) })();
         });
 
-        // ===== FLOATING EMOJIS BACKGROUND =====
-        const emojis = ['🌸', '🍗', '💦', '🥫', '🍑', '👩‍🦳', '✨', '💖'];
-        function createFloatingEmoji() {
-            const container = document.getElementById('floating-emojis');
-            const emoji = document.createElement('div');
-            emoji.className = 'emoji-rain';
-            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-            emoji.style.left = Math.random() * 100 + 'vw';
-            emoji.style.top = '-50px';
-            emoji.style.animationDuration = (5 + Math.random() * 10) + 's';
-            emoji.style.opacity = 0.1 + Math.random() * 0.3;
-            emoji.style.fontSize = (1 + Math.random() * 2) + 'rem';
-            container.appendChild(emoji);
-            setTimeout(() => emoji.remove(), 15000);
+        var reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
+        function rain(list) {
+            if (reduce) return;
+            for (var i = 0; i < 8; i++) {
+                (function () {
+                    var e = document.createElement("div"); e.className = "pop";
+                    e.textContent = list[Math.floor(Math.random() * list.length)];
+                    e.style.left = Math.random() * 95 + "vw"; e.style.animationDelay = Math.random() * .5 + "s";
+                    document.body.appendChild(e); setTimeout(function () { e.remove() }, 3400);
+                })()
+            }
         }
-        setInterval(createFloatingEmoji, 800);
 
-        // ===== ДНЕВНИК ДРОЧЕРА — ГЕНЕРАТОР СЕССИЙ =====
-        const reiVersions = [
-            { name: 'Rei Plugsuit', emoji: '👩‍🚀' },
-            { name: 'Rei Casual', emoji: '👗' },
-            { name: 'Red Eye Rei', emoji: '👁️‍🗨️' },
-            { name: 'Bandage Rei', emoji: '🩹' },
-            { name: 'Rei School Uniform', emoji: '🏫' },
-            { name: 'LCL Rei', emoji: '🌊' },
-            { name: 'Rei 3.0+1.0', emoji: '🔥' },
-            { name: 'Невеста Рей', emoji: '💒' },
-            { name: 'Rei в халате', emoji: '🛁' },
-            { name: 'Rei с ведром KFC', emoji: '🍗' },
-            { name: 'Rei в майонезе', emoji: '🥫' },
-            { name: 'Rei после отстрапона', emoji: '💦' },
+        var n = 7, notes = ["Ведро съедено, жизнь налаживается.", "Запил колой и пошёл дальше пересматривать Evangelion.", "Курьер доволен, Руслан тоже.", "Ещё одно ведро в копилку рекордов.", "Мало! Требуем добавки.", "Теперь можно и на пару. Шутка."];
+        var feedBtn = document.getElementById("feedBtn");
+        feedBtn.onclick = function () {
+            n++; document.getElementById("cnt").textContent = n;
+            var d = document.createElement("div"); d.className = "row";
+            d.textContent = "🍗 Ведро #" + n + ": " + notes[Math.floor(Math.random() * notes.length)];
+            var log = document.getElementById("log"); log.insertBefore(d, log.firstChild);
+            while (log.children.length > 8) log.lastChild.remove();
+            rain(["🍗", "🥤", "🌸"]);
+        };
+
+        var plans = [
+            ["👩‍🚀", "Пересмотреть первую серию Evangelion и снова сказать «всё-таки классика»"],
+            ["🍗", "Заказать ведро KFC и устроить марафон с друзьями"],
+            ["🌊", "Включить Rebuild 3.0+1.0 и спорить про концовку до утра"],
+            ["📚", "Сделать вид, что готовишься к парам, и открыть конспект на 5 минут"],
+            ["🎧", "Послушать саундтрек Evangelion и подумать о смысле жизни"],
+            ["🌸", "Собрать фигурку Рей и поставить её на почётное место"]
         ];
-
-        let sessionCount = 0;
-
-        function generateSession() {
-            const rei = reiVersions[Math.floor(Math.random() * reiVersions.length)];
-            const count = Math.floor(Math.random() * 40) + 1;
-            const startHour = Math.floor(Math.random() * 24);
-            const startMin = Math.floor(Math.random() * 60);
-            const durationMin = Math.floor(Math.random() * 120) + 15;
-            const endHour = (startHour + Math.floor((startMin + durationMin) / 60)) % 24;
-            const endMin = (startMin + durationMin) % 60;
-
-            const pad = n => n.toString().padStart(2, '0');
-            const timeStr = `${pad(startHour)}:${pad(startMin)} — ${pad(endHour)}:${pad(endMin)}`;
-
-            const phrases = [
-                `Сегодня я дрочил на ${rei.name} ${rei.emoji} — ${count} раз! Руслан доволен 💦`,
-                `${rei.emoji} ${rei.name} заставила меня кончить ${count} раз. Слава Рей! 🌸`,
-                `Не мог остановиться! ${rei.name} ${rei.emoji} — ${count} оргазмов за ${durationMin} минут 🔥`,
-                `Рей ${rei.emoji} снова победила! ${count} раз и ещё хочу! 💦🍗`,
-                `Сессия с ${rei.name} ${rei.emoji}: ${count} раз, ${durationMin} минут, 0 сожалений 😈`,
-            ];
-
-            const phrase = phrases[Math.floor(Math.random() * phrases.length)];
-
-            document.getElementById('sessionEmoji').textContent = rei.emoji;
-            document.getElementById('sessionText').textContent = phrase;
-            document.getElementById('sessionTime').textContent = `⏰ Время: ${timeStr} | Длительность: ${durationMin} мин`;
-
-            sessionCount++;
-
-            // Обновить общий счётчик
-            const totalEl = document.getElementById('totalCounter');
-            const newVal = parseInt(totalEl.textContent) + count;
-            totalEl.textContent = newVal;
-
-            // Анимация
-            totalEl.classList.add('animate-bounce');
-            setTimeout(() => totalEl.classList.remove('animate-bounce'), 1000);
-
-            // Добавить в лог
-            addDiaryEntry(rei.emoji, rei.name, count, timeStr);
-
-            // Эмодзи дождь
-            for (let i = 0; i < 8; i++) {
-                setTimeout(() => createEmojiRain(), i * 100);
-            }
-        }
-
-        function addDiaryEntry(emoji, name, count, time) {
-            const entries = document.getElementById('diaryEntries');
-            const entry = document.createElement('div');
-            entry.className = 'bg-black/60 border border-hotpink/20 rounded-xl p-4 flex items-center gap-3 animate-shake';
-            entry.innerHTML = `
-                <span class="text-2xl">${emoji}</span>
-                <div class="flex-1">
-                    <div class="text-sm font-bold text-neonpink">${name} — ${count} раз</div>
-                    <div class="text-xs text-gray-500">Время: ${time} | Сессия #${sessionCount}</div>
-                </div>
-                <span class="text-hotpink">💦</span>
-            `;
-            entries.insertBefore(entry, entries.firstChild);
-            setTimeout(() => entry.classList.remove('animate-shake'), 500);
-        }
-
-        // ===== КОРМИ РУСЛАНА =====
-        let buckets = 7;
-        let mayo = 14;
-
-        const feedMessages = [
-            'Руслан сожрал ведро и облизал пальцы! 🤤',
-            'Ещё одно ведро! Руслан даже не заметил! 🍗',
-            'Руслан запивает колой и требует ещё! 🥤',
-            'Ведро упало в желудок без звука! 🕳️',
-            'Руслан: "Это даже не перекус!" 😤',
-            'Майонез льётся рекой! 🥫',
-            'KFC доставляет ещё! Курьер в шоке! 🛵',
-            'Руслан открыл рот и ведро исчезло! 🪄',
-            'Доктор: "Как он ещё живой?!" Руслан: "KFC!" 💀',
-            'Руслан обмазался майонезом и счастлив! 🥫😍',
-        ];
-
-        function feedRuslan() {
-            buckets++;
-            mayo += 2;
-
-            document.getElementById('bucketCounter').textContent = buckets;
-            document.getElementById('mayoCounter').textContent = mayo;
-
-            // Анимация кнопки
-            const btn = document.getElementById('feedBtn');
-            btn.classList.add('animate-shake');
-            setTimeout(() => btn.classList.remove('animate-shake'), 500);
-
-            // Эмодзи дождь
-            for (let i = 0; i < 12; i++) {
-                setTimeout(() => {
-                    const emoji = ['🍗', '🥫', '🥤', '💦', '🌸'][Math.floor(Math.random() * 5)];
-                    createCustomEmojiRain(emoji);
-                }, i * 50);
-            }
-
-            // Добавить в лог
-            const log = document.getElementById('feedLog');
-            const msg = feedMessages[Math.floor(Math.random() * feedMessages.length)];
-            const entry = document.createElement('div');
-            entry.className = 'bg-black/60 border border-hotpink/20 rounded-lg p-3 text-sm flex items-center gap-2 animate-shake';
-            entry.innerHTML = `
-                <span>🍗</span>
-                <span class="text-neonpink">Ведро #${buckets}</span>
-                <span class="text-gray-500">— ${msg}</span>
-                <span class="ml-auto text-hotpink">🥫 +2 бочки</span>
-            `;
-            log.insertBefore(entry, log.firstChild);
-            setTimeout(() => entry.classList.remove('animate-shake'), 500);
-
-            // Обновить счётчик в diary
-            const totalEl = document.getElementById('totalCounter');
-            totalEl.textContent = parseInt(totalEl.textContent) + 1;
-
-            // Если много вёдер — показать предупреждение
-            if (buckets >= 20) {
-                document.getElementById('bucketCounter').textContent = buckets;
-                btn.innerHTML = '🍗 РУСЛАН НАЕЛСЯ... НЕТ, ЕЩЁ ХОЧЕТ! 🍗<br><span class="text-sm font-bold">(он никогда не наестся)</span>';
-            }
-        }
-
-        function createEmojiRain(emojiChar) {
-            const emoji = document.createElement('div');
-            emoji.className = 'emoji-rain';
-            emoji.textContent = emojiChar || emojis[Math.floor(Math.random() * emojis.length)];
-            emoji.style.left = Math.random() * 100 + 'vw';
-            emoji.style.top = '-50px';
-            emoji.style.animationDuration = (3 + Math.random() * 5) + 's';
-            emoji.style.fontSize = (2 + Math.random() * 2) + 'rem';
-            document.body.appendChild(emoji);
-            setTimeout(() => emoji.remove(), 8000);
-        }
-
-        function createCustomEmojiRain(char) {
-            createEmojiRain(char);
-        }
-
-        // ===== NEON GLOW ON SCROLL =====
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-glow');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('section h2').forEach(el => observer.observe(el));
-
-        // ===== TYPING EFFECT FOR HERO =====
-        const subtitle = document.getElementById('heroSubtitle');
-        const fullText = subtitle.textContent;
-        subtitle.textContent = '';
-        let charIndex = 0;
-
-        function typeWriter() {
-            if (charIndex < fullText.length) {
-                subtitle.textContent += fullText.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeWriter, 30 + Math.random() * 20);
-            }
-        }
-
-        setTimeout(typeWriter, 1000);
-
-        // ===== KONAMI CODE EASTER EGG =====
-        let konamiCode = [];
-        const konamiSequence = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-
-        document.addEventListener('keydown', (e) => {
-            konamiCode.push(e.keyCode);
-            if (konamiCode.length > konamiSequence.length) konamiCode.shift();
-            if (JSON.stringify(konamiCode) === JSON.stringify(konamiSequence)) {
-                document.body.style.animation = 'rainbow 2s linear infinite';
-                alert('🌸🍗 РУСЛАН В ШОКЕ! РЕЙ ПОЯВИЛАСЬ НА ЭКРАНЕ! 💦👩‍🦳');
-                setTimeout(() => document.body.style.animation = '', 5000);
-            }
-        });
-
-        // ===== SATISFACTION BAR ANIMATION =====
-        function animateSatiety() {
-            const el = document.getElementById('satietyValue');
-            let value = 0;
-            const target = 1337;
-            const increment = Math.ceil(target / 100);
-
-            function update() {
-                value += increment;
-                if (value >= target) {
-                    el.textContent = target + '%';
-                    return;
-                }
-                el.textContent = value + '%';
-                setTimeout(update, 30);
-            }
-
-            const satietyObserver = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting) {
-                    update();
-                    satietyObserver.disconnect();
-                }
-            });
-            satietyObserver.observe(el);
-        }
-        animateSatiety();
-
-        console.log('%c🌸 РУСЛАН КАМЕНЕЦКИЙ — №1 ДРОЧЕР АЯНАМИ РЕЙ 🍗', 'color: #FF1493; font-size: 20px; font-weight: bold; text-shadow: 0 0 10px #FF1493;');
-        console.log('%c💦 Этот сайт посвящён самому преданному фанату Рей 💦', 'color: #FF69B4; font-size: 14px;');
+        document.getElementById("gen").onclick = function () {
+            var p = plans[Math.floor(Math.random() * plans.length)];
+            var d = document.createElement("div"); d.className = "row";
+            d.textContent = p[0] + " " + p[1];
+            var out = document.getElementById("plans"); out.insertBefore(d, out.firstChild);
+            while (out.children.length > 5) out.lastChild.remove();
+            rain(["🌸", "✨"]);
+        };
     </script>
 </body>
+
 </html>
