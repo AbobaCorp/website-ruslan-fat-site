@@ -70,7 +70,7 @@ nav a:focus-visible {
 
 h1,
 h2 {
-    font-family: Impact, "Arial Black", system-ui, sans-serif;
+    font-family: Impact, "Oswald", "Arial Black", system-ui, sans-serif;
     letter-spacing: .02em;
     font-weight: 400
 }
@@ -193,7 +193,7 @@ section {
 }
 
 .num {
-    font: 2rem Impact, sans-serif;
+    font: 2rem Impact, "Oswald", sans-serif;
     color: var(--pink)
 }
 
@@ -236,7 +236,7 @@ section {
 }
 
 .big {
-    font: clamp(4rem, 18vw, 7rem)/1 Impact, sans-serif;
+    font: clamp(4rem, 18vw, 7rem)/1 Impact, "Oswald", sans-serif;
     color: #fff;
     text-shadow: 0 0 22px var(--pink)
 }
