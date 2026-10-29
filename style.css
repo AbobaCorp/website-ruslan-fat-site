@@ -60,7 +60,8 @@ section {
 
 .hero {
     text-align: center;
-    padding: 70px 0 50px
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .avatar {
