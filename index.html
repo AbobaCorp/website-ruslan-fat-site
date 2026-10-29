@@ -14,13 +14,24 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
-    <nav>
-        <div class="wrap">
-            <b>🍗 Руслан К.</b>
-            <a href="#about">О Руслане</a><a href="#shrine">Шрин Рей</a><a href="#evening">Вечер</a><a
-                href="#records">Рекорды</a><a href="#feed">Покормить</a>
+<body id="top">
+    <nav id="nav">
+        <div class="nav-in">
+            <a class="brand" href="#top" aria-label="В начало">
+                <span class="brand-t"><b>Руслан К.</b><small>храм Аянами Рей</small></span>
+            </a>
+            <div class="links" id="links">
+                <a href="#about">О Руслане</a>
+                <a href="#shrine">Шрин Рей</a>
+                <a href="#evening">Вечер</a>
+                <a href="#records">Рекорды</a>
+                <a href="#feed">Покормить</a>
+            </div>
+            <a class="pill" id="pill" href="#feed" aria-label="Вёдер KFC сегодня">🍗 <span id="navCnt">7</span></a>
+            <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false"
+                aria-controls="links"><i></i><i></i><i></i></button>
         </div>
+        <div class="progress" id="progress"></div>
     </nav>
 
     <header class="hero wrap">
@@ -162,6 +173,8 @@
         var feedBtn = document.getElementById("feedBtn");
         feedBtn.onclick = function () {
             n++; document.getElementById("cnt").textContent = n;
+            document.getElementById("navCnt").textContent = n;
+            var pl = document.getElementById("pill"); pl.classList.remove("bump"); void pl.offsetWidth; pl.classList.add("bump");
             var d = document.createElement("div"); d.className = "row";
             d.textContent = "🍗 Ведро #" + n + ": " + notes[Math.floor(Math.random() * notes.length)];
             var log = document.getElementById("log"); log.insertBefore(d, log.firstChild);
@@ -185,6 +198,35 @@
             while (out.children.length > 5) out.lastChild.remove();
             rain(["🌸", "✨"]);
         };
+
+        var menu = document.getElementById("links"), burger = document.getElementById("burger"), navEl = document.getElementById("nav");
+        function setMenu(o) { menu.classList.toggle("open", o); burger.setAttribute("aria-expanded", o) }
+        burger.onclick = function () { setMenu(!menu.classList.contains("open")) };
+        menu.onclick = function (e) { if (e.target.tagName === "A") setMenu(false) };
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false) });
+        document.addEventListener("click", function (e) { if (!navEl.contains(e.target)) setMenu(false) });
+
+        var prog = document.getElementById("progress"), tick = false;
+        addEventListener("scroll", function () {
+            if (tick) return; tick = true;
+            requestAnimationFrame(function () {
+                var m = document.documentElement.scrollHeight - innerHeight;
+                prog.style.transform = "scaleX(" + (m > 0 ? Math.min(1, scrollY / m) : 0) + ")";
+                tick = false;
+            });
+        }, { passive: true });
+
+        if ("IntersectionObserver" in window) {
+            var io = new IntersectionObserver(function (es) {
+                es.forEach(function (en) {
+                    if (!en.isIntersecting) return;
+                    menu.querySelectorAll("a").forEach(function (a) {
+                        a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id);
+                    });
+                });
+            }, { rootMargin: "-40% 0px -55% 0px" });
+            document.querySelectorAll("main section").forEach(function (s) { io.observe(s) });
+        }
     </script>
 </body>
 
