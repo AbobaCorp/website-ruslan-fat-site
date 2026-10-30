@@ -123,8 +123,13 @@ section {
     background: none;
     color: var(--pink);
     border: 2px solid var(--pink);
-    box-shadow: none;
-    margin-top: 12px
+    box-shadow: none
+}
+
+@media (max-width:404px) {
+    .btn.ghost {
+        margin-top: 10px;
+    }
 }
 
 .stats,
